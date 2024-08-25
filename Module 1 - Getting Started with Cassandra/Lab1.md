@@ -22,12 +22,13 @@
 1. **Sign in to DataStax Astra:**
    - Visit the [DataStax Astra website](https://astra.datastax.com).
    - Log in with your credentials.
+   - Note:  you can sign up with ONLY an email address (no credit card required)
 
 2. **Create a Database:**
-   - Navigate to the "Databases" section.
-   - Click "Create Database".
-   - **Region:** Choose `europe-west-1` (as suggested for EMEA).
-   - **Database Name:** Enter `killrvideocluster`.
+   - Navigate to the HOME page - Quick Access section.
+   - Click "Create Database - Serverless:  Non-Vector".
+   - **Region:** Choose any available region.
+   - **Database Name:** Enter `killrvideocluster` and the **Keyspace Name: `killrvideo`.
    - Choose the other fields as per your preference or follow the default recommendations.
    - Click "Create Database". This may take a few minutes.
 
