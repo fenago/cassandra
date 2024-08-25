@@ -1,4 +1,5 @@
-[![Get A Free Cassandra Environment Courtesy of DataStax - Dr. Lee](https://img.youtube.com/vi/GMfTnPCXdec/0.jpg)](https://youtu.be/GMfTnPCXdec)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GMfTnPCXdec" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ### **Lab: Getting Started with DataStax Astra and CQL Console**
 
