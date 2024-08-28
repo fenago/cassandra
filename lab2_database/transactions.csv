@@ -1,0 +1,76 @@
+transaction_id,account_id,transaction_amount,transaction_time,merchant_id,location,fraud_status
+1e75a5b1-ec5a-4c32-a1b2-b6a67940f5a4,acc_001,250.75,2024-08-27 14:35:20,merch_001,"New York, NY",false
+2d85b6b2-ec6a-4d42-a2c3-c7b78950g6b5,acc_002,1450.00,2024-08-27 15:00:00,merch_002,"Los Angeles, CA",false
+3f95c7c3-fd7a-5e52-b3d4-d8c79961h7c6,acc_003,560.25,2024-08-27 15:15:30,merch_003,"Chicago, IL",true
+4g16d8d4-ge8b-6f63-c4e5-e9d8aa72i8d7,acc_004,80.00,2024-08-27 15:45:10,merch_004,"Miami, FL",false
+5h27e9e5-hf9c-7g74-d5f6-faebbb83j9e8,acc_005,320.50,2024-08-27 16:10:45,merch_005,"San Francisco, CA",true
+6i38f0f6-ig0d-8h85-e6g7-gbecbc94k0f9,acc_006,270.00,2024-08-28 10:00:30,merch_006,"Austin, TX",false
+7j49g1g7-jh1e-9i96-f7h8-hcfcdd05l1g0,acc_007,130.75,2024-08-28 11:15:50,merch_007,"Seattle, WA",false
+8k50h2h8-kj2f-0j07-g8i9-idgdee16m2h1,acc_008,990.40,2024-08-28 12:30:10,merch_008,"Boston, MA",true
+9l61i3i9-lk3g-1k18-h9j0-jehfee27n3i2,acc_009,245.00,2024-08-28 13:45:25,merch_009,"Houston, TX",false
+0m72j4j0-ml4h-2l29-i0k1-kfifff38o4j3,acc_010,675.25,2024-08-28 15:00:45,merch_010,"Atlanta, GA",false
+1n83k5k1-nm5i-3m30-j1l2-lgjggg49p5k4,acc_011,1340.00,2024-08-29 09:15:10,merch_011,"Denver, CO",true
+2o94l6l2-on6j-4n41-k2m3-mhkhhh50q6l5,acc_012,410.90,2024-08-29 10:30:20,merch_012,"Orlando, FL",false
+3p05m7m3-po7k-5o52-l3n4-niilli61r7m6,acc_013,230.65,2024-08-29 11:45:35,merch_013,"Las Vegas, NV",false
+4q16n8n4-qp8l-6p63-m4o5-ojjmmm72s8n7,acc_014,990.00,2024-08-29 13:00:55,merch_014,"San Diego, CA",true
+5r27o9o5-rq9m-7q74-n5p6-pkkonm83t9o8,acc_015,580.50,2024-08-29 14:15:15,merch_015,"Portland, OR",false
+6s38p0p6-sr0n-8r85-o6q7-qllooo94u0p9,acc_016,150.75,2024-08-30 09:30:30,merch_016,"Phoenix, AZ",false
+7t49q1q7-ts1o-9s96-p7r8-rmmppp05v1q0,acc_017,235.90,2024-08-30 10:45:45,merch_017,"Salt Lake City, UT",true
+8u50r2r8-ut2p-0t07-q8s9-snnqqq16w2r1,acc_018,890.25,2024-08-30 12:00:10,merch_018,"Charlotte, NC",false
+9v61s3s9-vu3q-1u18-r9t0-toorrs27x3s2,acc_019,210.80,2024-08-30 13:15:25,merch_019,"Dallas, TX",false
+0w72t4t0-wv4r-2v29-s0u1-upptts38y4t3,acc_020,1050.00,2024-08-30 14:30:40,merch_020,"Nashville, TN",true
+1x83u5u1-wx5s-3w30-t1v2-vqqttt49z5u4,acc_021,410.55,2024-08-31 09:45:55,merch_021,"Memphis, TN",false
+2y94v6v2-xy6t-4x41-u2w3-wrruuu50a6v5,acc_022,135.75,2024-08-31 11:00:10,merch_022,"Baltimore, MD",false
+3z05w7w3-yz7u-5y52-v3x4-xsstvv61b7w6,acc_023,750.00,2024-08-31 12:15:25,merch_023,"Indianapolis, IN",true
+4a16x8x4-z01v-6z63-w4y5-yuutvv72c8x7,acc_024,495.30,2024-08-31 13:30:40,merch_024,"Cleveland, OH",false
+5b27y9y5-a12w-7a74-x5z6-avvvww83d9y8,acc_025,330.00,2024-08-31 14:45:55,merch_025,"Kansas City, MO",false
+6c38z0z6-b23x-8b85-y6a7-bwwwxx94e0z9,acc_026,890.15,2024-09-01 09:00:20,merch_026,"Columbus, OH",true
+7d49a1a7-c34y-9c96-z7b8-cxxxzz05f1a0,acc_027,580.75,2024-09-01 10:15:35,merch_027,"Milwaukee, WI",false
+8e50b2b8-d45z-0d07-01c9-dyyy0116g2b1,acc_028,270.00,2024-09-01 11:30:50,merch_028,"Louisville, KY",true
+9f61c3c9-e56a-1e18-12d0-ezzz1227h3c2,acc_029,420.45,2024-09-01 12:45:10,merch_029,"Oklahoma City, OK",false
+0g72d4d0-f67b-2f29-23e1-faaa2338i4d3,acc_030,670.00,2024-09-01 14:00:25,merch_030,"Minneapolis, MN",false
+1h83e5e1-g78c-3g30-34f2-gbbb3449j5e4,acc_031,1300.50,2024-09-02 09:15:40,merch_031,"St. Louis, MO",true
+2i94f6f2-h89d-4h41-45g3-hccc4550k6f5,acc_032,490.80,2024-09-02 10:30:55,merch_032,"Cincinnati, OH",false
+3j05g7g3-i90e-5i52-56h4-iddc5661l7g6,acc_033,230.65,2024-09-02 11:45:10,merch_033,"New Orleans, LA",true
+4k16h8h4-j01f-6j63-67i5-jeee6772m8h7,acc_034,760.90,2024-09-02 13:00:25,merch_034,"Pittsburgh, PA",false
+5l27i9i5-k12g-7k74-78j6-kfff7883n9i8,acc_035,150.75,2024-09-02 14:15:40,merch_035,"Raleigh, NC",false
+6m38j0j6-l23h-8l85-89k7-lggg8994o0j9,acc_036,235.90,2024-09-03 09:30:55,merch_036,"Richmond, VA",true
+7n49k1k7-m34i-9m96-90l8-mhhh9005p1k0,acc_037,990.00,2024-09-03 10:45:10,merch_037,"Tampa, FL",false
+8o50l2l8-n45j-0n07-01m9-niii0116q2l1,acc_038,580.75,2024-09-03 12:00:25,merch_038,"Jacksonville, FL",true
+9p61m3m9-o56k-1o18-12n0-ojjj1227r3m2,acc_039,270.00,2024-09-03 13:15:40,merch_039,"Buffalo, NY",false
+0q72n4n0-p67l-2p29-23o1-pkkk2338s4n3,acc_040,420.45,2024-09-03 14:30:55,merch_040,"Fort Worth, TX",false
+1r83o5o1-q78m-3q30-34p2-qlll3449t5o4,acc_041,670.00,2024-09-04 09:45:10,merch_041,"El Paso, TX",true
+2s94p6p2-r89n-4r41-45q3-rmmm4550u6p5,acc_042,1300.50,2024-09-04 11:00:25,merch_042,"Detroit, MI",false
+3t05q7q3-s90o-5s52-56r4-snnn5661v7q6,acc_043,490.80,2024-09-04 12:15:40,merch_043,"Charlotte, NC",false
+4u16r8r4-t01p-6t63-67s5-tooo6772w8r7,acc_044,230.65,2024-09-04 13:30:55,merch_044,"San Antonio, TX",true
+5v27s9s5-u12q-7u74-78t6-uppp7883x9s8,acc_045,760.90,2024-09-04 14:45:10,merch_045,"Austin, TX",false
+6w38t0t6-v23r-8v85-89u7-vqqq8994y0t9,acc_046,150.75,2024-09-05 09:00:25,merch_046,"Tucson, AZ",true
+7x49u1u7-w34s-9w96-90v8-wrrr9005z1u0,acc_047,235.90,2024-09-05 10:15:40,merch_047,"Albuquerque, NM",false
+8y50v2v8-x45t-0x07-01w9-xsst0116a2v1,acc_048,890.25,2024-09-05 11:30:55,merch_048,"Las Vegas, NV",false
+9z61w3w9-y56u-1y18-12x0-yuuu1227b3w2,acc_049,210.80,2024-09-05 12:45:10,merch_049,"Mesa, AZ",true
+0a72x4x0-z67v-2z29-23y1-zvvv2338c4x3,acc_050,1050.00,2024-09-05 14:00:25,merch_050,"Colorado Springs, CO",false
+1b83y5y1-a78w-3a30-34z2-avww3449d5y4,acc_051,410.55,2024-09-06 09:15:40,merch_051,"Omaha, NE",true
+2c94z6z2-b89x-4b41-45a3-bxxx4550e6z5,acc_052,135.75,2024-09-06 10:30:55,merch_052,"Tulsa, OK",false
+3d05a7a3-c90y-5c52-56b4-cyyy5661f7a6,acc_053,750.00,2024-09-06 11:45:10,merch_053,"Wichita, KS",false
+4e16b8b4-d01z-6d63-67c5-dzzz6772g8b7,acc_054,495.30,2024-09-06 13:00:25,merch_054,"Arlington, TX",true
+5f27c9c5-e12a-7e74-78d6-eaaa7883h9c8,acc_055,330.00,2024-09-06 14:15:40,merch_055,"New Orleans, LA",false
+6g38d0d6-f23b-8f85-89e7-fbbb8994i0d9,acc_056,890.15,2024-09-07 09:30:55,merch_056,"Bakersfield, CA",true
+7h49e1e7-g34c-9g96-90f8-gccc9005j1e0,acc_057,580.75,2024-09-07 10:45:10,merch_057,"Aurora, CO",false
+8i50f2f8-h45d-0h07-01g9-hddd0116k2f1,acc_058,270.00,2024-09-07 12:00:25,merch_058,"Anaheim, CA",false
+9j61g3g9-i56e-1i18-12h0-ieee1227l3g2,acc_059,420.45,2024-09-07 13:15:40,merch_059,"Santa Ana, CA",true
+0k72h4h0-j67f-2j29-23i1-jfff2338m4h3,acc_060,670.00,2024-09-07 14:30:55,merch_060,"Riverside, CA",false
+1l83i5i1-k78g-3k30-34j2-kggg3449n5i4,acc_061,1300.50,2024-09-08 09:00:25,merch_061,"Stockton, CA",false
+2m94j6j2-l89h-4l41-45k3-lhhh4550o6j5,acc_062,490.80,2024-09-08 10:15:40,merch_062,"Henderson, NV",true
+3n05k7k3-m90i-5m52-56l4-miii5661p7k6,acc_063,230.65,2024-09-08 11:30:55,merch_063,"Chula Vista, CA",false
+4o16l8l4-n01j-6n63-67m5-njjj6772q8l7,acc_064,760.90,2024-09-08 12:45:10,merch_064,"Irvine, CA",false
+5p27m9m5-o12k-7o74-78n6-okkk7883r9m8,acc_065,150.75,2024-09-08 14:00:25,merch_065,"Fremont, CA",true
+6q38n0n6-p23l-8p85-89o7-plll8994s0n9,acc_066,235.90,2024-09-09 09:15:40,merch_066,"San Bernardino, CA",false
+7r49o1o7-q34m-9q96-90p8-qmmm9005t1o0,acc_067,990.00,2024-09-09 10:30:55,merch_067,"Modesto, CA",true
+8s50p2p8-r45n-0r07-01q9-rrrr0116u2p1,acc_068,580.75,2024-09-09 11:45:10,merch_068,"Fontana, CA",false
+9t61q3q9-s56o-1s18-12r0-ssss1227v3q2,acc_069,270.00,2024-09-09 13:00:25,merch_069,"Moreno Valley, CA",false
+0u72r4r0-t67p-2t29-23s1-tttt2338w4r3,acc_070,420.45,2024-09-09 14:15:40,merch_070,"Glendale, CA",true
+1v83s5s1-u78q-3u30-34t2-uuuu3449x5s4,acc_071,670.00,2024-09-10 09:30:55,merch_071,"Oxnard, CA",false
+2w94t6t2-v89r-4v41-45u3-vvvv4550y6t5,acc_072,1300.50,2024-09-10 10:45:10,merch_072,"Huntington Beach, CA",true
+3x05u7u3-w90s-5w52-56v4-wwwx5661z7u6,acc_073,490.80,2024-09-10 12:00:25,merch_073,"Santa Clarita, CA",false
+4y16v8v4-x01t-6x63-67w5-xxxy6772a8v7,acc_074,230.65,2024-09-10 13:15:40,merch_074,"Garden Grove, CA",true
+5z27w9w5-y12u-7y74-78x6-yyyw7883b9w8,acc_075,760.90,2024-09-10 14:30:55,merch_075,"Santa Rosa, CA",false
