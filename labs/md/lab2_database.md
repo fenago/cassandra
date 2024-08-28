@@ -302,7 +302,7 @@ To create this CSV file:
 2. Enter the above data into the appropriate cells/fields.
 3. Save the file as `transactions.csv`.
 
-**Note:** File is also available in GitHub repo: `https://github.com/fenago/cassandra`
+**Note:** File is also available in GitHub repo: `https://github.com/fenago/cassandra/blob/main/labs/lab2_database/transactions.csv`
 
 ### Step 2: Load Data Using the Astra Portal
 
@@ -621,8 +621,7 @@ Python!
 To ensure your database is performing optimally and to gain insights
 into your data operations, it's crucial to monitor and analyze various
 metrics within DataStax Astra. This addendum will guide you through the
-process of viewing key metrics related to your namespaces, keyspaces,
-collections, and tables in Astra. These metrics will help you better
+process of viewing key metrics in Astra. These metrics will help you better
 understand the health, performance, and usage patterns of your database.
 
 #### Step 1: Accessing Database Metrics in Astra Portal
@@ -631,124 +630,29 @@ understand the health, performance, and usage patterns of your database.
 
 - Visit [Astra Portal](https://astra.datastax.com/) and log in with your credentials.
 
-1. **Navigate to Your Database:**
+1. **Overview**
 
-- From the **Databases** section, select the database you want to
-    monitor (e.g., `FraudDetectionDB`).
+![](./images/25.png)
 
-1. **View Metrics Overview:**
+2. **Datacenter Health Console**
 
-- On the **Overview** tab, you will see a summary of key metrics,
-    including:
-- **CPU Usage:** Tracks the processing power being used by your
-    database.
-- **Disk Usage:** Shows the total amount of storage used and
-    available.
-- **Throughput:** Displays the number of operations per second, such
-    as reads and writes.
-- **Latency:** Measures the response time for read and write
-    operations.
+View health metrics and performance information for your database.
 
-#### Step 2: Monitoring Keyspace and Namespace Metrics
+![](./images/26.png)
 
-1. **Keyspace Metrics (Non-Vector Databases):**
 
-- Go to the **Keyspaces** section in your Serverless (Non-Vector)
-    database.
-- Select the keyspace you wish to monitor.
-- Key metrics include:
-- **Total Tables:** The number of tables within the keyspace.
-- **Table Size:** The total size of all tables within the
-    keyspace.
-- **Replication Factor:** Indicates the number of copies of data
-    maintained across nodes.
-- Drill down into each table to view more specific metrics, such as
-    **read/write requests**, **SSTable counts**, and **compaction
-    metrics**.
-
-1. **Namespace Metrics (Vector Databases):**
-
-- Navigate to the **Namespaces** section in your Serverless (Vector)
-    database.
-- Select the namespace you wish to monitor.
-- Important metrics include:
-- **Total Collections:** The number of collections within the
-    namespace.
-- **Collection Size:** The total storage used by collections.
-- **Embedding Generation Success Rate:** If using vector collections,
-    monitor the success rate of embedding generation.
-- **Query Latency:** Average time taken to retrieve data from
-    collections.
-
-#### Step 3: Analyzing Collection and Table Metrics
-
-1. **Collection Metrics (Vector Databases):**
-
-- Select the **Data Explorer** tab for your Vector database.
-- Choose a namespace and a collection to view detailed
-    metrics.
-- Key metrics to observe:
-- **Document Count:** Total number of documents in the
-    collection.
-- **Vector Dimensions:** Number of dimensions in the vectors stored
-    within the collection.
-- **Query Throughput:** Number of queries processed per
-    second.
-- **Index Performance:** Efficiency and speed of Storage Attached
-    Indexing (SAI) within the collection.
-
-1. **Table Metrics (Non-Vector Databases):**
-
-- Use the **CQL Console** to access table-specific metrics in your
-    Non-Vector database.
-- Run the following CQL command to retrieve performance metrics for a
-    specific table:
-
-```
-nodetool cfstats frauddetectionks.transactions
-```
-
-- Metrics to look for:
-- **Live Disk Space Used:** Amount of disk space currently used by
-    the table.
-- **Read/Write Latency:** Average time taken for read/write
-    operations.
-- **SSTable Count:** Number of SSTables (Sorted String Tables)
-    associated with the table.
-- **Compaction Operations:** Number of ongoing or completed
-    compaction operations.
-
-#### Step 4: Setting Up Alerts and Notifications
-
-1. **Set Up Threshold Alerts:**
-
-- In the **Metrics** tab, set up threshold alerts to be notified when
-    certain metrics exceed predefined values.
-- Examples:
-- **CPU Usage Threshold:** Set an alert if CPU usage exceeds
-    80%.
-- **Disk Space Threshold:** Trigger an alert if disk usage exceeds
-    75%.
-
-1. **Enable Email Notifications:**
-
-- Ensure that email notifications are enabled for critical alerts, so
-    you are immediately informed of any issues that need
-    attention.
-
-#### Step 5: Regular Monitoring and Maintenance
+#### Regular Monitoring and Maintenance
 
 1. **Regular Review:**
 
-- Regularly review the metrics dashboard to keep an eye on the health
+- Regularly review the  dashboard to keep an eye on the health
     of your database.
 - Pay special attention to any spikes in latency or throughput, as
     these could indicate potential performance bottlenecks.
 
-1. **Perform Maintenance:**
+2. **Perform Maintenance:**
 
-- Based on the metrics, perform necessary maintenance tasks such as
-    compaction, repair operations, or scaling of resources.
+- Based on the metrics, perform necessary maintenance tasks such as compaction, repair operations, or scaling of resources.
 
 ### Conclusion
 
