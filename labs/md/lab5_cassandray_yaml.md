@@ -1,14 +1,12 @@
-Apologies for the confusion! Let's incorporate the `find` command into Step 1 and proceed accordingly.
-
 ### Lab 5: Exploring and Modifying `cassandra.yaml` in Apache Cassandra
 
 **Objective**:  
 In this lab, you will explore the `cassandra.yaml` configuration file, understand the different parts of it, and make changes to specific settings. You will use Apache Zeppelin to perform these tasks, allowing for a seamless and interactive experience.
 
-#### Step 1: Locate the `cassandra.yaml` File
+#### Step 1: Locate and View the `cassandra.yaml` File
 
 1. **Create a New Paragraph**:
-   - In Zeppelin, create a new paragraph to find where the `cassandra.yaml` file is located. Use the following command:
+   - In Zeppelin, create a new paragraph to locate the `cassandra.yaml` file. Use the following command:
 
    ```sh
    %sh
@@ -17,47 +15,24 @@ In this lab, you will explore the `cassandra.yaml` configuration file, understan
 
    - Run this paragraph. The `find` command will search the entire file system for `cassandra.yaml` and display its location.
 
-2. **Verify the Location**:
-   - Once you have confirmed that the `cassandra.yaml` file is located at `/etc/cassandra/cassandra.yaml`, make a note of this path as you will use it in the subsequent steps.
-
-#### Step 2: Explore `cassandra.yaml`
-
-1. **Navigate to the Directory**:
-   - Using the path you found in Step 1, create a new paragraph to navigate to the directory containing the `cassandra.yaml` file:
-
-   ```sh
-   %sh
-   cd /etc/cassandra/
-   ls -l cassandra.yaml
-   ```
-
-   - Run this paragraph to ensure the file is present.
-
 2. **View the Contents of `cassandra.yaml`**:
-   - Create another paragraph to view the contents of the file:
+   - You have confirmed that the `cassandra.yaml` file is located at `/etc/cassandra/cassandra.yaml`. Create a new paragraph to view the contents of the file:
 
    ```sh
    %sh
-   less cassandra.yaml
+   cat /etc/cassandra/cassandra.yaml
    ```
 
-   - Alternatively, you can output the entire file with `cat`:
+   - Run this paragraph to display the contents of the `cassandra.yaml` file. Scroll through the output to familiarize yourself with the different configuration settings.
 
-   ```sh
-   %sh
-   cat cassandra.yaml
-   ```
-
-   - Run the paragraph to review the file's content. Take some time to scroll through and familiarize yourself with the various sections.
-
-#### Step 3: Understand Key Sections of `cassandra.yaml`
+#### Step 2: Understand Key Sections of `cassandra.yaml`
 
 1. **Cluster Name**:
    - Find the section in the `cassandra.yaml` file that defines the `cluster_name`. Create a new paragraph and write a command to display this specific line:
 
    ```sh
    %sh
-   grep "cluster_name:" cassandra.yaml
+   grep "cluster_name:" /etc/cassandra/cassandra.yaml
    ```
 
    - Run the paragraph to see the current cluster name.
@@ -67,7 +42,7 @@ In this lab, you will explore the `cassandra.yaml` configuration file, understan
 
    ```sh
    %sh
-   grep "seeds:" cassandra.yaml
+   grep "seeds:" /etc/cassandra/cassandra.yaml
    ```
 
    - Run the paragraph to see which IP addresses are listed as seeds.
@@ -77,7 +52,7 @@ In this lab, you will explore the `cassandra.yaml` configuration file, understan
 
    ```sh
    %sh
-   grep "data_file_directories:" -A 2 cassandra.yaml
+   grep "data_file_directories:" -A 2 /etc/cassandra/cassandra.yaml
    ```
 
    - Run the paragraph to review the data directories.
@@ -87,7 +62,7 @@ In this lab, you will explore the `cassandra.yaml` configuration file, understan
 
    ```sh
    %sh
-   grep "commitlog_directory:" cassandra.yaml
+   grep "commitlog_directory:" /etc/cassandra/cassandra.yaml
    ```
 
    - Run the paragraph to see the path where commit logs are stored.
@@ -97,19 +72,19 @@ In this lab, you will explore the `cassandra.yaml` configuration file, understan
 
    ```sh
    %sh
-   grep "endpoint_snitch:" cassandra.yaml
+   grep "endpoint_snitch:" /etc/cassandra/cassandra.yaml
    ```
 
    - Run the paragraph to see which snitch is being used.
 
-#### Step 4: Make Changes to `cassandra.yaml`
+#### Step 3: Make Changes to `cassandra.yaml`
 
 1. **Change the Cluster Name**:
    - To change the cluster name, create a paragraph that uses `sed` to modify the `cluster_name` directly within the `cassandra.yaml` file:
 
    ```sh
    %sh
-   sed -i 's/^cluster_name:.*/cluster_name: "NewClusterName"/' cassandra.yaml
+   sed -i 's/^cluster_name:.*/cluster_name: "NewClusterName"/' /etc/cassandra/cassandra.yaml
    ```
 
    - Run the paragraph to change the cluster name. Replace `"NewClusterName"` with your desired name.
@@ -119,7 +94,7 @@ In this lab, you will explore the `cassandra.yaml` configuration file, understan
 
    ```sh
    %sh
-   sed -i 's/^    - seeds: ".*"/    - seeds: "127.0.0.1,10.0.0.2"/' cassandra.yaml
+   sed -i 's/^    - seeds: ".*"/    - seeds: "127.0.0.1,10.0.0.2"/' /etc/cassandra/cassandra.yaml
    ```
 
    - Run the paragraph to add `10.0.0.2` as a seed node. Adjust the IP address as needed.
@@ -129,7 +104,7 @@ In this lab, you will explore the `cassandra.yaml` configuration file, understan
 
    ```sh
    %sh
-   sed -i 's|^data_file_directories:.*|data_file_directories:\n    - /new/data/directory/path|' cassandra.yaml
+   sed -i 's|^data_file_directories:.*|data_file_directories:\n    - /new/data/directory/path|' /etc/cassandra/cassandra.yaml
    ```
 
    - Run the paragraph to update the data directory path. Replace `/new/data/directory/path` with the actual path you want to use.
@@ -139,7 +114,7 @@ In this lab, you will explore the `cassandra.yaml` configuration file, understan
 
    ```sh
    %sh
-   sed -i 's|^commitlog_directory:.*|commitlog_directory: /new/commitlog/path|' cassandra.yaml
+   sed -i 's|^commitlog_directory:.*|commitlog_directory: /new/commitlog/path|' /etc/cassandra/cassandra.yaml
    ```
 
    - Run the paragraph to change the commitlog directory. Replace `/new/commitlog/path` with your desired path.
@@ -149,12 +124,12 @@ In this lab, you will explore the `cassandra.yaml` configuration file, understan
 
    ```sh
    %sh
-   sed -i 's/^endpoint_snitch:.*/endpoint_snitch: GossipingPropertyFileSnitch/' cassandra.yaml
+   sed -i 's/^endpoint_snitch:.*/endpoint_snitch: GossipingPropertyFileSnitch/' /etc/cassandra/cassandra.yaml
    ```
 
    - Run the paragraph to set the snitch to `GossipingPropertyFileSnitch`. Adjust the snitch type as needed.
 
-#### Step 5: Restart Cassandra to Apply Changes
+#### Step 4: Restart Cassandra to Apply Changes
 
 1. **Create a New Paragraph**:
    - After making changes to the `cassandra.yaml` file, you need to restart the Cassandra service to apply them. Create a paragraph to restart Cassandra:
@@ -167,7 +142,7 @@ In this lab, you will explore the `cassandra.yaml` configuration file, understan
    - Run the paragraph to restart Cassandra.
 
 2. **Verify the Changes**:
-   - To ensure your changes have taken effect, you can create paragraphs to check the relevant settings again, similar to the commands used in Step 3.
+   - To ensure your changes have taken effect, you can create paragraphs to check the relevant settings again, similar to the commands used in Step 2.
 
 ### Conclusion
 
