@@ -39,17 +39,16 @@ In this lab, you will set up a basic Cassandra environment, create tables with d
    ```
 
    - Create a `orders` table in the keyspace:
-
-   ```sql
-   %cassandra
-   CREATE TABLE IF NOT EXISTS orders (
-       order_id UUID PRIMARY KEY,
-       user_id UUID,
-       item TEXT,
-       price DECIMAL,
-       order_date TIMESTAMP,
-       FOREIGN KEY (user_id) REFERENCES users(user_id)
-   );
+```
+%cassandra
+CREATE TABLE IF NOT EXISTS orders (
+    order_id UUID PRIMARY KEY,
+    user_id UUID,
+    item TEXT,
+    price DECIMAL,
+    order_date TIMESTAMP
+);
+```
    ```
 
    - Run these paragraphs to create the `users` and `orders` tables.
