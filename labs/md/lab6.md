@@ -49,7 +49,6 @@ CREATE TABLE IF NOT EXISTS orders (
     order_date TIMESTAMP
 );
 ```
-   ```
 
    - Run these paragraphs to create the `users` and `orders` tables.
 
